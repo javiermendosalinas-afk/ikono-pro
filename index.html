@@ -224,6 +224,10 @@ section.s{padding:88px 0;border-bottom:1px solid var(--line)}
 .monogram{aspect-ratio:4/5;background:var(--paper-2);border:1px solid var(--line);display:grid;place-items:center;position:relative}
 .monogram b{font-family:var(--f-display);font-size:min(30vw,180px);font-weight:400;font-style:italic;color:var(--ink);line-height:1}
 .monogram small{position:absolute;bottom:16px;left:18px;right:18px;font-family:var(--f-mono);font-size:12.5px;letter-spacing:.1em;color:var(--muted);display:flex;justify-content:space-between}
+.portrait{margin:0;border:1px solid var(--line);background:var(--paper-2)}
+.portrait img{display:block;width:100%;height:auto;aspect-ratio:457/560;object-fit:cover}
+.portrait figcaption{display:flex;justify-content:space-between;padding:10px 14px;font-family:var(--f-mono);font-size:12.5px;letter-spacing:.08em;color:var(--muted)}
+@media (max-width:860px){.portrait{max-width:420px}}
 .author .bio{font-size:18px}
 .author .bio p + p{margin-top:16px}
 .facts{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:28px}
@@ -564,7 +568,7 @@ footer{padding:40px 0 56px;font-size:15.5px;color:var(--muted)}
     <div>
       <h2>Javier Mendoza Salinas</h2>
       <div class="author">
-        <div class="monogram" aria-hidden="true"><b>JM</b><small><span>FUNDADOR</span><span>GUADALAJARA</span></small></div>
+        <figure class="portrait"><img src="1794957783058_image.png" alt="Javier Mendoza Salinas, fundador de IKONO Alta Dirección, firmando un ejemplar de la Colección IKONO" width="457" height="560" loading="lazy"><figcaption><span>FUNDADOR</span><span>GUADALAJARA</span></figcaption></figure>
         <div>
           <div class="bio">
             <p>Más de 40 años en puestos de dirección en empresas mexicanas y multinacionales: PepsiCo/Sabritas, Grupo Bimbo, GRUMA, AJE Group, Dunkin' Donuts, Empresas ICA y Grupo Carso, entre otras.</p>
